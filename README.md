@@ -1,1 +1,1 @@
-This is [My blog](https://imtuann.github.io/). The full link is <https://imtuann.github.io/>
+This is [my blog](https://imtuann.github.io/). The full link is <https://imtuann.github.io>. Welcome! :smiley:
