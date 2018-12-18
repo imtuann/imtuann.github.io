@@ -49,7 +49,7 @@ fab.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14f)
 // text style
 fab.setTypeface(Typeface.BOLD)
 // font
-val typeface = Typeface.createFromAsset(assets, "fonts/roboto.ttf")
+val typeface = Typeface.createFromAsset(assets, "fonts/RobotoSlab-Regular.ttf")
 fab.setTypeface(typeface)
 ```
 
@@ -69,6 +69,7 @@ add `xmlns:app="http://schemas.android.com/apk/res-auto"`
     app:fab_icon="@drawable/ic_message_white_24dp"
     app:fab_duration="100"
     app:fab_text_size="@dimen/text_size_action_button"
+    app:fab_typeface="fonts/RobotoSlab-Regular.ttf"
     app:fab_padding="@dimen/padding_fab"
     app:fab_expanded="true"/>
 ```
@@ -84,12 +85,11 @@ add `xmlns:app="http://schemas.android.com/apk/res-auto"`
 |fab_icon|The icon of the button|
 |fab_duration|The length of the expand or collapse animation|
 |fab_text_size|The text size of the button|
+|fab_typeface|The font path in assets folder|
 |fab_padding|The padding inside the button|
 |fab_expanded|The button is expanded if you set true|
 
 ## Setup
-
-[![](https://jitpack.io/v/imtuann/FloatingActionButtonExpandable.svg)](https://jitpack.io/#imtuann/FloatingActionButtonExpandable)
 
 Step 1. Add the JitPack repository in your root build.gradle at the end of repositories:
 ```
@@ -103,8 +103,12 @@ allprojects {
 
 Step 2. Add the dependency
 ```
-implementation 'com.github.imtuann:FloatingActionButtonExpandable:1.1.1'
+implementation 'com.github.imtuann:FloatingActionButtonExpandable:1.1.2'
 ```
+
+## Compatibility
+
+Minimum Android SDK: API level 21
 
 ## Source code
 You can find this project on [my github page](https://github.com/imtuann/FloatingActionButtonExpandable)
